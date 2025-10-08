@@ -1,0 +1,39 @@
+.wmkcfeedback{padding-top:20px}
+.inquiry-form{display:flex;justify-content:space-between;flex-wrap:wrap}
+.inquiry-form input,.inquiry-form .wmkcfb-fileupload{width:49%;height:50px;font-size:16px;padding:0px 10px;display:inline-flex;align-items:center;font-family:var(--fontfamily)}
+.inquiry-form input,.inquiry-form textarea,.inquiry-form .wmkcfb-fileupload{margin-bottom:20px;background:#f7f7f7;border:none;outline:1px solid #F2F6F7;box-sizing:border-box}
+.inquiry-form input::placeholder,.inquiry-form textarea::placeholder,.inquiry-form .wmkcfb-fileupload{color:#666}
+.inquiry-form textarea{width:100%;padding:10px;font-size:16px;resize:none;font-family:var(--fontfamily)}
+.inquiry-form .input-error{outline:1px solid red}
+.wmkcfeedback textarea{width:100%;padding:10px;font-family:initial;font-size:16px;font-family:var(--fontfamily)}
+.wmkcfeedback input.input-error,.wmkcfeedback textarea.input-error{outline:1px solid #c92326!important}
+.wmkcfeedback .select-menu{position:relative;margin-bottom:20px;width:49%}
+.wmkcfeedback .select-menu input{margin:0!important;width:100%!important;cursor:pointer}
+.wmkcfeedback .select-menu .select-menu-div em{margin-right:5px;position:absolute;right:32px;top:50%;transform:translateY(-50%);transition:all .4s ease}
+.wmkcfeedback .select-menu .select-menu-div em.select-menu-i{transform:rotateX(180deg)}
+.wmkcfeedback .select-menu .select-menu-div em::after,.wmkcfeedback .select-menu .select-menu-div em::before{content:"";width:10px;height:2px;background:#999;position:absolute;top:50%;left:0;transform:rotate(45deg)}
+.wmkcfeedback .select-menu .select-menu-div em::after{transform:rotate(-45deg);left:6px}
+.wmkcfeedback .select-menu .select-menu-ul{box-shadow:0 1px 15px 0 rgba(15,19,39,.1);list-style:none;display:none;width:100%;text-align:left;border:1px solid #ddd;background:#FFFFFF;position:absolute;z-index:9}
+.wmkcfeedback .select-menu .select-menu-ul li{color:#000;padding:0px 20px;line-height:2.5;cursor:pointer;font-size:13px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden}
+.wmkcfeedback .select-menu .select-menu-ul li:hover{background:#F2FAEA}
+.wmkcfeedback .select-menu .select-menu-ul li:nth-child(2n){background:#F5F4F4}
+.wmkcfeedback .select-menu .select-menu-ul li:nth-child(2n):hover{background:#F2FAEA}
+.wmkcfeedback .select-menu .select-menu-ul li.select-this{background:#F2FAEA}
+.wmkcfeedback .select-menu .select-menu-ul li.select-this:hover{background:#F2FAEA!important}
+.wmkcfeedback .send-btn[disabled]{background:#EEE!important;color:#999!important}
+.wmkcfeedback .send-btn[disabled]::before{content:none!important}
+.wmkcfeedback .loading{position:relative;width:18px;height:18px;margin-left:8px;border:2px solid #000;border-top-color:rgba(0,0,0,.2);border-right-color:rgba(0,0,0,.2);border-bottom-color:rgba(0,0,0,.2);border-radius:100%;animation:feedbacksenloading infinite .75s linear}
+@keyframes feedbacksenloading{0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}}
+.wmkcfeedback .feed-verification{position:relative;width:100%;max-width:320px;margin-bottom:20px}
+.wmkcfeedback .feed-verification input{width:100%!important;margin:0!important}
+.wmkcfeedback .feed-verification img{position:absolute;right:20px;top:50%;transform:translateY(-50%)}
+.wmkcfeedback .send-btn{vertical-align:middle;transform:perspective(1px) translateZ(0);box-shadow:0 0 1px transparent;position:relative;transition-property:color;transition-duration:.5s;min-width:200px;height:50px;background:#24292f;color:#FFFFFF;border-radius:3px;margin-left:50%;transform:translateX(-50%);cursor:pointer;display:flex;align-items:center;justify-content:center;outline:0;border:none;font-size:16px}
+.wmkcfeedback .send-btn::before{content:"";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0px;background:var(--color);transform:scaleX(0);transform-origin:0 50%;transition-property:transform;transition-duration:.5s;transition-timing-function:ease-out;border-radius:3px}
+.wmkcfeedback .send-btn:hover::before{transform:scaleX(1);transition-timing-function:cubic-bezier(.52,1.64,.37,.66)}
+@media (max-width:768px){.wmkcfeedback input,.inquiry-form .wmkcfb-fileupload{width:100%}
+.wmkcfeedback .feed-verification{max-width:100%}
+.wmkcfeedback .select-menu{width:100%!important}}
+.page-section-contact-contact-box .wmkcfeedback .select-menu{width:100%}
+.inquiry-form .wmkcfb-fileupload{font-family:initial;font-size:14px}
+.wmkcfb-fileupload{background-image:url(../images/choose-file.webp)!important;background-repeat:no-repeat!important;background-position:right!important;background-size:auto 55%!important;cursor:pointer}
